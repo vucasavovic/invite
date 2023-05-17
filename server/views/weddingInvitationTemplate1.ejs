@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite | Wedding invitation 1</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="wrapper">
+    <div class="header">
+        <div><img src="/static/logo.svg" alt=""></div>
+        <div></div>
+        <div><a href="">Copy link</a></div>
+         
+    </div>
+
+    <div class="invitation invitation-template-one aaaa">
+
+        <div class="border-wrapper">
+        <img class="ornament" src="/static/invitationElements/branch-1.svg" alt="">
+        <p class="body-copy"><%= invitation.intro %></p>
+
+        <div class="wedding-couple">
+            <p class="person"><%= invitation.brideName%></p>
+            <p class="and">&</p>
+            <p class="person"><%= invitation.groomName%></p>
+        </div>
+        <p class="body-copy main">
+            <%= invitation.mainParagraph %>
+        </p>
+
+        <div class="date-time">
+            <p class="body-copy">Date <%= invitation.date %></p>
+            <p class="body-copy">At <%= invitation.time %></p>
+        </div>
+
+
+        <div class="place">
+            <p class="body-copy"><%= invitation.place %></p>
+            <p class="body-copy"><%= invitation.address %></p>
+        </div>
+        
+        <p class="body-copy last-line"><%= invitation.lastLine %></p>
+
+        </div>
+         
+    </div>
+    <div class="footer">
+        2023 All rights reserved | Vuk Savovic
+    </div>
+</body>
+</html>

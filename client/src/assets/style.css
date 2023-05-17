@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  user-select: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+#app {
+  position: relative;
+  max-width: 1480px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-weight: normal;
+  font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 1rem;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+label {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+body {
+  background-color: white;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+button, .button {
+  cursor: pointer;
+  padding: 10px 2rem;
+  background-color: #262626;
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  transition: all 0.1s ease-in-out;
+}
+button:hover, .button:hover {
+  background-color: rgb(109, 109, 109);
+}
+
+.header {
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header > * {
+  flex-direction: 1;
+  display: flex;
+}
+.header > :nth-child(2) {
+  justify-content: center;
+}
+.header > :last-child {
+  justify-content: flex-end;
+}
+
+.border-wrapper {
+  padding: 3rem;
+  border: 1px solid #1A3867;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 760px) {
+  .border-wrapper {
+    padding: 4rem 2rem;
+  }
+}
+
+.invitation {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+@media screen and (max-width: 760px) {
+  .invitation {
+    padding: 1rem;
+  }
+}
+
+.invitation-template-1 {
+  background-color: #F9E8E8;
+  color: #22603d;
+}
+
+.invitation-template-2 {
+  font-family: "Merriweather", serif;
+  background-color: #DDE4ED;
+  color: #1A3867;
+}
+.invitation-template-2 .ornament {
+  max-width: 140px;
+}
+
+.ornament {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6vh;
+}
+
+.body-copy {
+  font-size: 1.25rem;
+}
+
+.wedding-couple {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  line-height: 1;
+}
+.wedding-couple > .person {
+  font-size: clamp(3rem, 4vw, 8rem);
+}
+.wedding-couple > .and {
+  font-size: 2rem;
+}
+
+.main {
+  margin-top: 4rem;
+  max-width: 700px;
+}
+
+.date-time {
+  margin-top: 6vh;
+}
+
+.place {
+  margin-top: 6vh;
+}
+
+.last-line {
+  margin-top: 6vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.not-found > .message {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.not-found > .message > .title {
+  font-size: 3rem;
+}/*# sourceMappingURL=style.css.map */

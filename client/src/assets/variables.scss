@@ -1,0 +1,20 @@
+
+$black:#262626;
+$primary-color:#19a3df;
+
+$neutral:rgb(138, 150, 244);
+$warning:#ff2f4e;
+$success:#61a957;
+ 
+$border-color: rgba($color: #000000, $alpha: .2);
+$border: 1px solid $border-color;
+$r-medium:16px;
+$r-small:8px;
+
+
+
+@mixin breakpoint-down($x){
+    @media screen and (max-width:$x){
+      @content
+    }
+}
